@@ -15,7 +15,7 @@ these are!
 
 // Setup equality operator "=="
 function testStrict(val) {
-  if (val == 7) { 
+  if (val == '10') { 
     return "Equal";
   }
   return "Not Equal";
@@ -23,4 +23,16 @@ function testStrict(val) {
 
 testStrict(10);
 
-return not equal because 7 is not equal to 10
+===return equal because '10' is equal to 10
+
+// Setup
+function testStrict(val) {
+  if (val === 7) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+
+testStrict('7');
+===return not equal beacuase 7 is different from '7'
